@@ -1,0 +1,157 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+h2 {
+    font-size: 2rem;
+    color: silver;
+}
+
+header > img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav ul {
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px;
+    list-style: none;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    padding: 30px;
+    color: black;
+}
+
+nav a:hover {
+    background-color: gold;
+    padding: 30px;
+    padding-top: 10px;
+    padding-bottom: 11px;
+}
+
+section{
+    display: flex;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+
+}
+
+.container img {
+    border-radius: 20px;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.centered h2:hover {
+    color: gold;
+    transition: 2s;
+}
+
+article {
+    flex: 1;
+}
+
+.border {
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    margin: 25px;
+    text-align: center;
+}
+
+.border:hover {
+    background-color: gold;
+    transition: 2s;
+}
+
+.border h2 {
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.border p {
+    color: black;
+    text-align: left;
+    margin-left: 5px;
+}
+
+.border ul {
+    color: black;
+    list-style: none;
+    text-align: left;
+}
+
+footer {
+    display: flex;
+    font-family: serif;
+    border-top: 6px solid gold;
+    border-radius: 5px;
+}
+
+footer div {
+    flex: 1;
+    margin-top: 10px;
+}
+
+/* for responsive layout */
+@media screen and (max-width: 600px) { 
+    nav li,
+    nav ul {
+        display: inline-block;
+        float: none;
+        display: block;
+        text-align: center;
+        margin: 10px;
+        border-bottom: 2px solid black;
+    }
+}
+@media screen and (max-width: 660px) {
+    section {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    footer,
+    footer img{
+        text-align: right;
+        font-size: small;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    footer img {
+        width: 100px;
+        float: left;
+    }
+}
